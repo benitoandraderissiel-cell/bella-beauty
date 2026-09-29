@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Belleza Studio - Salón de belleza. Reserva tu cita por WhatsApp.">
+
+    <title>Belleza Studio | Salón de Belleza</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="container nav">
+
+            <a href="#inicio" class="logo">
+                <span>B</span> Belleza Studio
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <nav id="navMenu">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#galeria">Galería</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <p class="subtitle">BIENVENIDA A</p>
+
+            <h1>
+                Belleza que<br>
+                <span>inspira.</span>
+            </h1>
+
+            <p class="hero-text">
+                Descubre nuestros servicios de belleza y
+                reserva tu cita de manera rápida y sencilla.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#servicios" class="btn primary">
+                    Ver servicios
+                </a>
+
+                <a href="https://wa.me/59171058439?text=Hola%20Belleza%20Studio,%20quiero%20reservar%20una%20cita."
+                   class="btn whatsapp"
+                   target="_blank">
+                    Reservar por WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICIOS ================= -->
+    <section class="services section" id="servicios">
+
+        <div class="container">
+
+            <div class="section-title">
+                <p>CATÁLOGO</p>
+                <h2>Nuestros servicios</h2>
+                <span>
+                    Elige una categoría y descubre todo lo que tenemos para ti.
+                </span>
+            </div>
+
+
+            <!-- CATEGORÍAS -->
+            <div class="categories">
+
+                <button class="category active" data-category="todos">
+                    Todos
+                </button>
+
+                <button class="category" data-category="cabello">
+                    💇 Cabello
+                </button>
+
+                <button class="category" data-category="unas">
+                    💅 Uñas
+                </button>
+
+                <button class="category" data-category="maquillaje">
+                    💄 Maquillaje
+                </button>
+
+                <button class="category" data-category="pestanas">
+                    👁️ Pestañas
+                </button>
+
+                <button class="category" data-category="cejas">
+                    ✨ Cejas
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTOS / SERVICIOS -->
+            <div class="products" id="products">
+
+
+                <!-- CABELLO -->
+                <article class="product" data-category="cabello">
+
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80"
+                             alt="Corte de cabello">
+
+                        <span class="tag">Cabello</span>
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Corte de cabello</h3>
+
+                        <p>
+                            Corte personalizado según tu estilo y tipo de cabello.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 50</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="Corte de cabello">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="product" data-category="cabello">
+
+                    <div class="product-image">
+
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80"
+                             alt="Coloración de cabello">
+
+                        <span class="tag">Cabello</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Coloración</h3>
+
+                        <p>
+                            Dale un nuevo look a tu cabello con una coloración profesional.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Desde Bs. 150</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="Coloración de cabello">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- UÑAS -->
+                <article class="product" data-category="unas">
+
+                    <div class="product-image">
+
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80"
+                             alt="Manicure">
+
+                        <span class="tag">Uñas</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Manicure</h3>
+
+                        <p>
+                            Cuidado completo de manos y uñas con acabado profesional.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 60</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="Manicure">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="product" data-category="unas">
+
+                    <div class="product-image">
+
+                        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80"
+                             alt="Uñas acrílicas">
+
+                        <span class="tag">Uñas</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Uñas acrílicas</h3>
+
+                        <p>
+                            Diseños modernos y personalizados para tus uñas.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Desde Bs. 120</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="Uñas acrílicas">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MAQUILLAJE -->
+                <article class="product" data-category="maquillaje">
+
+                    <div class="product-image">
+
+                        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800&q=80"
+                             alt="Maquillaje">
+
+                        <span class="tag">Maquillaje</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Maquillaje social</h3>
+
+                        <p>
+                            Maquillaje profesional para eventos y ocasiones especiales.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 150</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="Maquillaje social">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PESTAÑAS -->
+                <article class="product" data-category="pestanas">
+
+                    <div class="product-image">
+
+                        <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=800&q=80"
+                             alt="Pestañas">
+
+                        <span class="tag">Pestañas</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Extensiones de pestañas</h3>
+
+                        <p>
+                            Realza tu mirada con extensiones de pestañas.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 130</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="Extensiones de pestañas">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CEJAS -->
+                <article class="product" data-category="cejas">
+
+                    <div class="product-image">
+
+                        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=800&q=80"
+                             alt="Diseño de cejas">
+
+                        <span class="tag">Cejas</span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Diseño de cejas</h3>
+
+                        <p>
+                            Diseño personalizado para resaltar la forma natural de tu rostro.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>Bs. 40</strong>
+
+                            <button class="reserve-btn"
+                                    data-service="Diseño de cejas">
+                                Reservar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALERÍA ================= -->
+    <section class="gallery section" id="galeria">
+
+        <div class="container">
+
+            <div class="section-title">
+                <p>NUESTRO TRABAJO</p>
+                <h2>Galería</h2>
+            </div>
+
+            <div class="gallery-grid">
+
+                <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
+                     alt="Trabajo de belleza">
+
+                <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=80"
+                     alt="Trabajo de uñas">
+
+                <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80"
+                     alt="Maquillaje">
+
+                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80"
+                     alt="Belleza">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="contact section" id="contacto">
+
+        <div class="container contact-box">
+
+            <div>
+
+                <p class="small-title">¿LISTA PARA TU CAMBIO?</p>
+
+                <h2>
+                    Reserva tu cita
+                </h2>
+
+                <p>
+                    Escríbenos para agenda tu próximo servicio.
+                </p>
+
+            </div>
+
+            <a href="https://wa.me/59171058439?text=Hola%20Belleza%20Studio,%20quiero%20reservar%20una%20cita."
+               target="_blank"
+               class="btn whatsapp large">
+
+                 WhatsApp
+            </a>
+            
+            <a href="https://wa.me/59171058439?text=Hola%20Belleza%20Studio,%20quiero%20reservar%20una%20cita."
+               target="_blank"
+               class="btn facebook large">
+
+             facebook 
+            </a>
+            
+            <a href="https://wa.me/59171058439?text=Hola%20Belleza%20Studio,%20quiero%20reservar%20una%20cita."
+               target="_blank"
+               class="btn tiktok large">
+
+                tiktok
+            </a>
+            
+            <a href="https://wa.me/59171058439?text=Hola%20Belleza%20Studio,%20quiero%20reservar%20una%20cita."
+               target="_blank"
+               class="btn instagram large">
+
+                instagram 
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+                <h3>Belleza Studio</h3>
+                <p>
+                    Tu belleza, nuestro arte.
+                </p>
+            </div>
+
+            <div>
+                <p>📱 WhatsApp: 71058439</p>
+                <p>🕐 Lun - Sáb: 09:00 - 19:00</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Belleza Studio. Todos los derechos reservados.
+        </div>
+
+    </footer>
+
+
+    <!-- MODAL DE RESERVA -->
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+
+            <button class="close" id="closeModal">
+                ×
+            </button>
+
+            <p class="small-title">
+                RESERVAR CITA
+            </p>
+
+            <h2 id="selectedService">
+                Servicio
+            </h2>
+
+            <label>
+                Tu nombre
+            </label>
+
+            <input type="text"
+                   id="clientName"
+                   placeholder="Escribe tu nombre">
+
+            <label>
+                Fecha deseada
+            </label>
+
+            <input type="date"
+                   id="date">
+
+            <label>
+                Hora deseada
+            </label>
+
+            <input type="time"
+                   id="time">
+
+            <button class="btn whatsapp modal-btn"
+                    id="sendWhatsapp">
+
+                💬 Confirmar por WhatsApp
+
+            </button>
+            
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
