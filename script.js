@@ -190,12 +190,12 @@ sendWhatsapp.addEventListener("click", () => {
 
     // Crear mensaje
     const message =
-        `Hola Belleza Studio 🌸%0A%0A` +
+        `Hola Belleza Studio %0A%0A` +
         `Quiero reservar una cita.%0A%0A` +
-        `👤 Nombre: ${name}%0A` +
-        `💇 Servicio: ${currentService}%0A` +
-        `📅 Fecha: ${formattedDate}%0A` +
-        `⏰ Hora: ${time}%0A%0A` +
+        ` Nombre: ${name}%0A` +
+        ` Servicio: ${currentService}%0A` +
+        ` Fecha: ${formattedDate}%0A` +
+        ` Hora: ${time}%0A%0A` +
         `¿Podrían confirmarme la disponibilidad?`;
 
 
